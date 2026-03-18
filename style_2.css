@@ -176,11 +176,14 @@ a:hover:after{
     #links_right {
         font-size: 17px;
         font-family: 'arrow', sans-serif;
-        text-transform: uppercase;
         line-height: 1.4;
         white-space: normal;
         text-align: center;
         color: inherit;
+    }
+
+    #links_right span{
+        display: none;
     }
 
     #links_right a,
