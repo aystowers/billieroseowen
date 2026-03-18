@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
 
-        <link rel="stylesheet" href="style_2.css"/>
+        <link rel="stylesheet" href="style_work.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -18,6 +18,17 @@
     </head>
 
 <body>
+
+
+    <script>
+
+        $(window).scroll(function(){
+            $("span").css("opacity", 1 - $(window).scrollTop() / 140);
+          });
+    </script>
+
+
+
 
 
 <div id="nav">
@@ -39,40 +50,28 @@
 
 </div>
 
-
-<div id="slideshow">
-  <img src="imgs/img1.jpg" class="slide active">
-  <img src="imgs/img2.jpg" class="slide">
-  <img src="imgs/img3.jpg" class="slide">
-  <img src="imgs/img4.jpg" class="slide">
-  <img src="imgs/img5.jpg" class="slide">
-  <img src="imgs/img6.jpg" class="slide">
-  <img src="imgs/img7.jpg" class="slide">
-  <img src="imgs/img8.jpg" class="slide">
-  <img src="imgs/img9.jpg" class="slide">
-  <img src="imgs/img10.jpg" class="slide">
-  <img src="imgs/img11.jpg" class="slide">
-  <img src="imgs/img12.jpg" class="slide">
+<div id="header">
+⟡ COMING SOON ⟡
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
-  let index = 0;
+<div id="desc">
+</div>
 
-  setInterval(function () {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-  }, 1000);
-});
-</script>
-
- 
 <!--
-<div id="footer">
-  © Billie Rose Owen
+<div id="gallery">
+    <img src="imgs/img1.jpg" alt="">
+    <img src="imgs/img2.jpg" alt="">
+    <img src="imgs/img3.jpg" alt="">
+    <img src="imgs/img4.jpg" alt="">
+    <img src="imgs/img5.jpg" alt="">
+    <img src="imgs/img6.jpg" alt="">
+    <img src="imgs/img7.jpg" alt="">
+    <img src="imgs/img8.jpg" alt="">
+    <img src="imgs/img9.jpg" alt="">
+    <img src="imgs/img10.jpg" alt="">
+
 </div>
+
 -->
 
 </body>
